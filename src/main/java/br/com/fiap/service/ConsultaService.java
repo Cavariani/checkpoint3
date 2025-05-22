@@ -37,7 +37,7 @@ public class ConsultaService {
         Optional<Paciente> pacienteOpt = pacienteService.getPacienteById(dto.getPacienteId());
 
         if (profissionalOpt.isEmpty() || pacienteOpt.isEmpty()) {
-            return null; // Ou lance uma exceção padrão se preferir
+            return null; 
         }
 
         Profissional profissional = profissionalOpt.get();
