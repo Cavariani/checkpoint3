@@ -42,7 +42,7 @@ public class PacienteController {
         return ResponseEntity.ok(response);
     }
 
-    // Endpoint que estava faltando
+   
     @GetMapping("/{id}")
     public ResponseEntity<PacienteResponse> getById(@PathVariable Long id) {
         return pacienteService.getPacienteById(id)
